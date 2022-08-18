@@ -1,0 +1,17 @@
+name: geoflood-env
+channels:
+  - conda-forge
+dependencies:
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - ipykernel
+  - rasterio==1.1.3
+  - numba
+  - netCDF4
+  - statsmodels
+  - proj
+  - six
+  - geopandas
+  - scikit-image
