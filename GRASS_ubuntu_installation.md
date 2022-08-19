@@ -57,8 +57,8 @@ $ LDFLAGS="$MYLDFLAGS" CFLAGS="$MYCFLAGS" CXXFLAGS="$MYCXXFLAGS" ./configure \
   --without-odbc \
   --without-openmp \
   --without-ffmpeg
-$ make -j4 (will take a while)
-$ sudo make install (wait to launch grass78 until some other issues are addressed)
+$ make -j4 # (will take a while)
+$ sudo make install # (wait to launch grass78 until some other issues are addressed)
 ```
 
 Install other dependencies:
