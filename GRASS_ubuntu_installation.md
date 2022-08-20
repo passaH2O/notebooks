@@ -26,6 +26,10 @@ $ sudo apt install libproj-dev proj-data proj-bin unzip libgeos-dev \
  checkinstall \
  libglu1-mesa-dev libxmu-dev \
  ghostscript wget -y
+```
+
+This next step might no longer be necessary. First try skipping to the next step (Install GRASS and dependencies)
+```sh
 $ cd $HOME/Software # (or wherever)
 $ git clone https://github.com/OSGeo/grass.git grass-7.8.latest.git
 $ cd grass-7.8.latest.git/
@@ -59,7 +63,7 @@ $ make -j4 # (will take a while)
 $ sudo make install # (wait to launch grass78 until some other issues are addressed)
 ```
 
-Install other dependencies:
+Install GRASS and dependencies:
 
 ```sh
 $ sudo apt install --fix-missing grass grass-doc grass-dev \
