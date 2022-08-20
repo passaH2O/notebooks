@@ -63,7 +63,7 @@ Install other dependencies:
 
 ```sh
 $ sudo apt install --fix-missing grass grass-doc grass-dev \
- subversion libcanberra-gtk-module ython3-distutils
+ subversion libcanberra-gtk-module python3-distutils -y
 ```
 
 Optionally create user location and mapset data (use your grass version, grass78 or grass79):
