@@ -3,10 +3,8 @@ Adapted from Nelson Tull's instructions for installing GRASS GIS on Ubuntu 20.04
 Follow these install commands for GRASS on Ubuntu (don't need optional commands, see below for required steps): https://grasswiki.osgeo.org/wiki/Compile_and_Install_Ubuntu
 
 ```sh
-$ sudo apt-get update && sudo apt-get upgrade -y (takes a little while)
-$ sudo apt-get install libproj-dev proj-data proj-bin unzip -y
-$ sudo apt-get install libgeos-dev -y
-$ sudo apt-get install \
+$ sudo apt update && sudo apt upgrade -y
+$ sudo apt install libproj-dev proj-data proj-bin unzip libgeos-dev \
  build-essential \
  flex make bison gcc libgcc1 g++ ccache \
  python3 python3-dev \
@@ -64,11 +62,8 @@ $ sudo make install # (wait to launch grass78 until some other issues are addres
 Install other dependencies:
 
 ```sh
-$ sudo apt-get install grass grass-doc --fix-missing
-$ sudo apt-get install grass-dev
-$ sudo apt-get install subversion
-$ sudo apt-get install libcanberra-gtk-module
-$ sudo apt-get install python3-distutils
+$ sudo apt install --fix-missing grass grass-doc grass-dev \
+ subversion libcanberra-gtk-module ython3-distutils
 ```
 
 Optionally create user location and mapset data (use your grass version, grass78 or grass79):
